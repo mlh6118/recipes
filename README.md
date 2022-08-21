@@ -13,4 +13,4 @@ N/A
 From the recipes folder, run `python manage.py runserver`.
 
 ### Tests
-* Tests (tbd) are run using `python manage.py tests` from the recipes folder.
+* Tests are run using `python manage.py tests` from the recipes folder.
