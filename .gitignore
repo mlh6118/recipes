@@ -122,3 +122,4 @@ node_modules/
 poetry.lock
 
 *.sqlite3
+staticfiles

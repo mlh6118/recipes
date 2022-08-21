@@ -23,7 +23,7 @@ class RecipeCreateView(CreateView):
 
 
 class RecipeUpdateView(UpdateView):
-    template_name = 'pages/recipe_create.html'
+    template_name = 'pages/recipe_update.html'
     model = Recipe
     fields = ['category', 'name', 'description', 'ingredients',
               'instructions', 'submitter']
