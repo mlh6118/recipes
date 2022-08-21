@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+{% extends '_base.html' %}
+
+    <body>
+        {% block content %}
+
+            <h2>Details about {{ recipe.name }}</h2>
+            <p>Category:<br> {{ recipe.category }}</p>
+            <p>Description:<br> {{ recipe.description }}</p>
+            <p>Ingredients:<br> {{ recipe.ingredients|linebreaks }}</p>
+            <p>Instructions:<br> {{ recipe.instructions|linebreaks }}</p>
+            <p>Submitter: {{ recipe.submitter }}</p>
+
+            <button type="submit"><a href="{% url 'recipe_update' recipe.pk %}">Update</a></button>
+            <button type="submit"><a href="{% url 'recipe_delete' recipe.pk %}">Delete</a></button>
+
+        {% endblock content %}
+
+    </body>
+
+</html>
